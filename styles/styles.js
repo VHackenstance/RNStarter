@@ -12,13 +12,21 @@ const styles = StyleSheet.create({
         flex: 1,
         padding: 20,
     },
+    flatlist_item_container: {
+        marginHorizontal: 10,
+        marginVertical: 40,
+    },
     home_container: {
         backgroundColor: '#fff',
         flex: 1,
         padding: 20
     },
-    text: {
+    text_H1_b: {
         fontSize: 30,
+        fontWeight: "bold",
+    },
+    text_p_b: {
+        fontSize: 18,
         fontWeight: "bold",
     },
 });

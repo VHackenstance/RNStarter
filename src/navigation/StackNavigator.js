@@ -12,7 +12,7 @@ const StackNavigator = () => {
         >
             <Stack.Screen name="Home" component={HomeScreen} options={{title: 'Home Screen'}}/>
             <Stack.Screen name="Components" component={ComponentsScreen} options={{title: 'Components Screen'}} />
-            <Stack.Screen name="FlatList" component={FlatListScreen} options={{title: 'List Screen'}} />
+            <Stack.Screen name="FlatList" component={FlatListScreen} options={{title: 'Flat List Component'}} />
         </Stack.Navigator>
     )
 }
