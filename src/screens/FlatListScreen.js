@@ -19,7 +19,7 @@ const FlatListScreen = ({ route }) => {
     const { name, type } = route.params
     return (
         <View style={styles.container}>
-            <Text style={styles.text_H1_b}>{ name }:  { type }</Text>
+            <Text style={styles.H1_b}>{ name }:  { type }</Text>
             <FlatList
                 data={friends}
                 // horizontal
@@ -28,7 +28,7 @@ const FlatListScreen = ({ route }) => {
                 keyExtractor={(friend) => friend.name }
                 renderItem={({ index, item }) => {
                     return (
-                        <Text style={[styles.text_p_b, styles.flatlist_item_container]}>
+                        <Text style={[styles.p_b, styles.flatlistItemContainer]}>
                             {index + 1}. {item.name} - Age {item.age}
                         </Text>
                     )

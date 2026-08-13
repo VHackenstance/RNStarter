@@ -6,8 +6,8 @@ const ComponentsScreen = ({ route }) => {
   const { name, company } = route.params
   return (
       <View style={styles.container}>
-        <Text style={styles.text}>Components Screen </Text>
-        <Text style={styles.text}>{ company }: { name } </Text>
+        <Text style={styles.H1_b}>Components Screen </Text>
+        <Text style={styles.p_b}>{ company }: { name } </Text>
       </View>
   )
 };

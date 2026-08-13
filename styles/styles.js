@@ -12,22 +12,35 @@ const styles = StyleSheet.create({
         flex: 1,
         padding: 20,
     },
-    flatlist_item_container: {
+    flatlistItemContainer: {
         marginHorizontal: 10,
         marginVertical: 40,
     },
-    home_container: {
+    homeContainer: {
         backgroundColor: '#fff',
         flex: 1,
         padding: 20
     },
-    text_H1_b: {
+    H1_b: {
         fontSize: 30,
         fontWeight: "bold",
     },
-    text_p_b: {
+    p_b: {
         fontSize: 18,
         fontWeight: "bold",
+    },
+    TO_button: {
+        alignItems: 'center',
+        backgroundColor: '#2ba0fb',
+        justifyContent: 'center',
+        paddingVertical: 10,
+        borderRadius: 5,
+        paddingHorizontal: 20,
+    },
+    TO_buttonText: {
+        color: '#FFFFFF',
+        fontSize: 16,
+        fontWeight: 'bold',
     },
 });
 
