@@ -1,27 +1,15 @@
-import React from "react";
-import { Text, StyleSheet, View } from "react-native";
+import React from "react"
+import { Text, View } from "react-native"
+import styles from "../../styles/styles"
 
 const ComponentsScreen = ({ route }) => {
-  const { name } = route.params;
+  const { name, company } = route.params;
   return (
       <View style={styles.container}>
         <Text style={styles.text}>Components Screen </Text>
-        <Text style={styles.text}>{ name } </Text>
+        <Text style={styles.text}>{ company }: { name } </Text>
       </View>
   )
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text: {
-    fontSize: 30,
-    fontWeight: "bold",
-  },
-});
-
-export default ComponentsScreen;
+export default ComponentsScreen

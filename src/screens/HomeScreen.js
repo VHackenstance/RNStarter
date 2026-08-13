@@ -1,30 +1,23 @@
 import React from "react";
-import { Text, StyleSheet, View, Button } from "react-native";
+import { Text, View, Button } from "react-native";
+import styles from "../../styles/styles"
 
 const HomeScreen = ({ navigation }) => {
   return (
-      <View style={styles.container}>
+      <View style={styles.home_container}>
         <Text style={styles.text}>HomeScreen</Text>
-        <Button
-            title="Componets"
-            onPress={() => navigation.navigate('Components', { name: 'RAM' })}
-        />
+        <View style={styles.button_container}>
+            <Button
+                title="Componets"
+                onPress={() => navigation.navigate('Components', { name: 'RAM', company: 'ABC Hardware' })}
+            />
+            <Button
+                title="Lists"
+                onPress={() => navigation.navigate('FlatList', { name: 'Element', type: 'Flat List' })}
+            />
+        </View>
       </View>
-
   )
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text: {
-    fontSize: 30,
-    fontWeight: "bold",
-  },
-});
 
 export default HomeScreen;
