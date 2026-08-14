@@ -1,6 +1,7 @@
 module.exports = {
     presets: [
-        "@babel/preset-env",
+        //  removing this preset got rid of the error messages about dynamic pathways
+        // "@babel/preset-env",
         "@babel/preset-flow",
         "@babel/preset-react",
         "@babel/preset-typescript",
