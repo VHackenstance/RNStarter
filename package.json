@@ -8,7 +8,9 @@
     "expo": "~57.0.12",
     "expo-status-bar": "~57.0.1",
     "react": "19.2.3",
-    "react-native": "0.86.2",
+    "react-native": "^0.86.0",
+    "react-native-gesture-handler": "^3.2.1",
+    "react-native-reanimated": "^4.5.3",
     "react-native-safe-area-context": "~5.7.0",
     "react-native-screens": "~4.26.0"
   },
@@ -18,5 +20,18 @@
     "ios": "expo start --ios",
     "web": "expo start --web"
   },
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.29.7",
+    "@babel/plugin-transform-modules-commonjs": "^7.29.7",
+    "@babel/plugin-transform-private-methods": "^7.29.7",
+    "@babel/preset-env": "^7.29.7",
+    "@babel/preset-flow": "^7.29.7",
+    "@babel/preset-react": "^7.29.7",
+    "@babel/preset-typescript": "^7.29.7",
+    "@types/react": "~19.2.4",
+    "babel-plugin-module-resolver": "^5.0.3",
+    "babel-preset-expo": "^57.0.6",
+    "typescript": "~6.0.3"
+  }
 }

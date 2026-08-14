@@ -1,11 +1,12 @@
-import { StyleSheet, Text, View } from 'react-native'
+//  App.js
 import { NavigationContainer } from '@react-navigation/native'
-import StackNavigator from "./src/navigation/StackNavigator";
+import StackNavigator from "@navigation/StackNavigator";
 
 export default function App() {
   return (
-      <NavigationContainer>
-        <StackNavigator />
-      </NavigationContainer>
-  );
+          <NavigationContainer>
+              <StackNavigator />
+          </NavigationContainer>
+  )
 }
+
