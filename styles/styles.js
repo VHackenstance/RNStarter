@@ -25,6 +25,10 @@ const styles = StyleSheet.create({
         fontSize: 30,
         fontWeight: "bold",
     },
+    H2_b: {
+        fontSize: 24,
+        fontWeight: "bold",
+    },
     p_b: {
         fontSize: 18,
         fontWeight: "bold",
