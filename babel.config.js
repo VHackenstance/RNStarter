@@ -24,6 +24,7 @@ module.exports = {
                     '@utils': './src/utils',
                     '@views': './src/screens/views',
                     '@styles': './styles',
+                    '@data': './data',
                 },
             },
         ],
