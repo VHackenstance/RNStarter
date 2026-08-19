@@ -8,6 +8,9 @@
       "@components/*": [
         "src/components/*"
       ],
+      "@data/*": [
+        "data/*"
+      ],
       "@screens/*": [
         "src/screens/*"
       ],

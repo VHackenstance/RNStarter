@@ -1,14 +1,28 @@
-import React from "react"
-import { Text, View, Image } from "react-native"
+import React, { useState } from "react"
+import { Text, View, Button,  } from "react-native"
 import styles from "@styles/styles"
 
 const CountScreen = ({ route }) => {
-    const { key1, key2 } = route.params;
+    const [counter, setCounter] = useState(0)
+
     return (
         <View style={styles.container}>
-            <Text style={styles.H1_b}>Count Screen</Text>
-            <Text style={styles.H3_b}>key1: { key1 }</Text>
-            <Text style={styles.H3_b}>key2: {key2}</Text>
+            <Text style={styles.H1_b}>Current Count: {counter}</Text>
+            <Button
+                title={"Increase Count"}
+                onPress={() => {
+                    setCounter(counter + 1)
+                    console.log(counter)
+                }}
+            />
+            <Button
+                title={"Decrease Count"}
+                onPress={() => {
+                    setCounter(counter - 1)
+                    console.log(counter)
+                }}
+            />
+
         </View>
     )
 };
