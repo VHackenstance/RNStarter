@@ -3,7 +3,7 @@ import { Text, View } from "react-native";
 import styles from "@styles/styles"
 import HomeScreenButtons from '@views/HomeScreenButtons';
 
-// navigation object provided automatically to screen components defined within a navigator
+// navigation object provided to screens defined in navigator
 const HomeScreen = ({ navigation }) => {
     return (
       <View style={styles.homeContainer}>

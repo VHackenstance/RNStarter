@@ -1,7 +1,9 @@
+import { FlatList } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import { HomeScreen, FlatListScreen, ComponentsScreen, ImageScreen, CountScreen } from "../screens"
+import { HomeScreen, FlatListScreen,
+    ComponentsScreen, ImageScreen,
+    CountScreen, ColorScreen } from "../screens"
 
-// Setup Navigation
 const Stack = createNativeStackNavigator();
 
 const StackNavigator = () => {
@@ -15,6 +17,7 @@ const StackNavigator = () => {
             <Stack.Screen name="FlatList" component={FlatListScreen} options={{title: 'Flat List Element'}} />
             <Stack.Screen name="Images" component={ImageScreen} options={{title: 'Image Screen'}} />
             <Stack.Screen name="Count" component={CountScreen} options={{title: 'Count Screen'}} />
+            <Stack.Screen name="Color" component={ColorScreen} options={{title: 'Color Screen'}} />
         </Stack.Navigator>
     )
 }

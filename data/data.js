@@ -28,18 +28,37 @@ const buttonData = [
     },
 ]
 const TOData = [
-    { title: "TO - Components", navTarget: "Components",
+    { title: "Components", navTarget: "Components",
         props: { key1: "Prop1", key2: "Prop2"}
     },
-    { title: "TO - Flat List", navTarget: "FlatList",
+    { title: "Flat List", navTarget: "FlatList",
         props: { key1: "Prop1", key2: "Prop2"}
     },
-    { title: "TO - Images", navTarget: "Images",
+    { title: "Images", navTarget: "Images",
         props: { key1: "Prop1", key2: "Prop2"}
     },
-    { title: "TO - Count", navTarget: "Count",
+    { title: "Count", navTarget: "Count",
+        props: { key1: "Prop1", key2: "Prop2"}
+    },
+    { title: "Color", navTarget: "Color",
         props: { key1: "Prop1", key2: "Prop2"}
     },
 ]
 
-export { imageData, buttonData, TOData }
+//  does not work with flatlist in stack navigator
+const StackScreenData = [
+    { name: "Home", component: "HomeScreen", title: "Home Screen",
+    },
+    { name: "Components", component: "ComponentsScreen", title: "Components Screen",
+    },
+    { name: "FlatList", component: "FlatListScreen", title: "Flat List Screen",
+    },
+    { name: "Images", component: "ImageScreen", title: "Images Screen",
+    },
+    { name: "Count", component: "CountScreen", title: "Count Screen",
+    },
+    { name: "Color", component: "ColorScreen", title: "Color Screen",
+    },
+]
+
+export { imageData, buttonData, TOData, StackScreenData }
