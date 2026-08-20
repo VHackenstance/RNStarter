@@ -43,6 +43,9 @@ const TOData = [
     { title: "Color", navTarget: "Color",
         props: { key1: "Prop1", key2: "Prop2"}
     },
+    { title: "More Color", navTarget: "MoreColor",
+        props: { key1: "Prop1", key2: "Prop2"}
+    },
 ]
 
 //  does not work with flatlist in stack navigator

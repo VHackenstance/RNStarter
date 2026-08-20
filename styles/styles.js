@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor: '#fff',
         flex: 1,
+        gap: 10,
         padding: 20,
     },
     flatlistItemContainer: {

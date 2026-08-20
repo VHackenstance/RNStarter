@@ -5,9 +5,6 @@
     "jsx": "react-native",
     "baseUrl": ".",
     "paths": {
-      "@components/*": [
-        "src/components/*"
-      ],
       "@data/*": [
         "data/*"
       ],
@@ -25,6 +22,9 @@
       ],
       "@styles/*": [
         "styles/*"
+      ],
+      "@components/*": [
+        "src/components/*"
       ]
     }
   },
